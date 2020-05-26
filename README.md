@@ -13,3 +13,4 @@ O curso é dividido em módulos e alguns possuem uma pasta neste reposítório
 - react-16: Redux, Gerenciamento de Estado
 - Módulo 9: Redux, Build e Deploy
 - fashionista: Projeto Prático
+!
