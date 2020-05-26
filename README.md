@@ -10,6 +10,6 @@ O curso é dividido em módulos e alguns possuem uma pasta neste reposítório
 - react-13: React I, Fundamentos e React OO
 - react-14: React II, Fundamentos e React OO
 - react-15: React Hooks, React Funcional
-- Módulo 8: Redux, Gerenciamento de Estado
+- react-16: Redux, Gerenciamento de Estado
 - Módulo 9: Redux, Build e Deploy
 - fashionista: Projeto Prático
