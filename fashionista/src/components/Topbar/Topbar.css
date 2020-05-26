@@ -1,0 +1,35 @@
+
+.Topbar__header {
+  backface-visibility: hidden;
+  background-color: #fff;
+  height: 5.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+.Topbar__header ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  padding: .5rem;
+  padding: 0;
+  position: relative;
+}
+.Topbar__header li{
+  margin: 0 1rem;
+}
+.header__logo {
+  height: 5rem; 
+}
+.header__logo img{
+  height: 100%;
+}
+.header__search {
+  color: #212529;
+
+}
+.header__shopping{
+  color: #3f454b;
+}
