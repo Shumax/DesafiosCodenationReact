@@ -35,6 +35,7 @@ const FeedRoute = () => {
         .then(data => {setStories(data)})
         .catch(erro => {throw erro;})
     }
+    loadStories();
   }, [users]);
 
   return (
