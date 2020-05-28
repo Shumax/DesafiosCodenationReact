@@ -6,8 +6,27 @@ import './Story.scss';
 
 const Story = ({ story, user, handleClose }) => {
   return (
-    <section className="story">
-      <div className="container"></div>
+    <section className="story" data-testid="story">
+      <div className="container">
+        <header className="story__header">
+          <div className="user">
+            <Link to={`/users/${user.username}`} className="user__thumb">
+              <img src={user.avatar} alt={user.name}/>
+            </Link>
+            <Link to={`/users/${user.username}`} className="user__name">
+              {user.name}
+            </Link>
+          </div>
+          <button className="story__close" onClick={() => test}>
+            <i className="fas fa-times"/>
+          </button>
+        </header>
+        <div className="story__progress">
+          <div>
+            
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
