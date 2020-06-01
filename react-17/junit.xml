@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="11" failures="11" time="10.027">
+  <testsuite name="Spotify Pocket" errors="0" failures="11" skipped="0" timestamp="2020-06-01T22:55:04" time="7.416" tests="11">
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;Loading&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;Loading&gt; component" time="0.055">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;loading&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;loading&quot;
+    &gt;
+      &lt;span /&gt;
+      &lt;span /&gt;
+      &lt;span /&gt;
+      &lt;span /&gt;
+      &lt;span /&gt;
+      &lt;span /&gt;
+      &lt;span /&gt;
+      &lt;span /&gt;
+    &lt;/div&gt;
+    &lt;p
+      class=&quot;loading__text&quot;
+    &gt;
+      Carregando...
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:36:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;Logo&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;Logo&gt; component" time="0.016">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;logo&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;svg
+      class=&quot;spotify-brand&quot;
+    &gt;
+      spotify-logo-green.svg
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:47:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;RouteHeader&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;RouteHeader&gt; component" time="0.005">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;route-header&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;route-header&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:58:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;WelcomeBox&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;WelcomeBox&gt; component" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;welcome-box&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;welcome-box&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:69:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;App&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;App&gt; container" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;app&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;app&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:78:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Authorize&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Authorize&gt; container" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;callback&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;callback&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:89:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Categories&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Categories&gt; container" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;categories&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;categories&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:101:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;CategoryItem&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;CategoryItem&gt; container" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;category&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;categories__item&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:119:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Login&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Login&gt; container" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;login&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;main
+      class=&quot;login&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:130:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;PlaylistItem&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;PlaylistItem&gt; container" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;playlist&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;playlists__item&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:150:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Playlists&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Playlists&gt; container" time="0.004">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;playlists&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;playlists&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/user/codenation/react-17/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:168:25)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
