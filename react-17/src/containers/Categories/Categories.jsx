@@ -8,7 +8,11 @@ import CategoryItem from './CategoryItem';
 import './Categories.scss';
 
 const Categories = ({ data, isLoading, url }) => (
-    <div className="categories" data-testid="categories"/>
+    <div className="categories" data-testid="categories">
+        <Loading/>
+        <PropTypes/>
+        <CategoryItem/>
+    </div>
 );
 
 export default Categories;
