@@ -1,0 +1,16 @@
+
+> instadev@0.1.0 submit /home/user/codenation/react-16
+> react-scripts test src/__tests__/submit.test.js --reporters=default --reporters=jest-junit "--watchAll=false"
+
+  console.log src/routes/FeedRoute/FeedRoute.jsx:25
+    Promise { <pending> }
+
+  console.log src/routes/FeedRoute/FeedRoute.jsx:53
+    Promise { <pending> }
+
+  console.log src/routes/FeedRoute/FeedRoute.jsx:25
+    Promise { <pending> }
+
+  console.log src/routes/FeedRoute/FeedRoute.jsx:53
+    Promise { <pending> }
+
