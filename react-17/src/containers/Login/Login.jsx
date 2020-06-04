@@ -37,10 +37,9 @@ const Login = () => {
             <div className="container">
                 <Logo/>
                 <h2 className="login__microcopy">
-                    Não toca a música inteira,
-                    <strong> 
-                        mas toca o seu 
-                        <span role="img" className="login__microcopy__heart" aria-label="Coração">❤️</span>
+                    Não toca a música inteira, 
+                    <strong> mas toca o seu 
+                        <span role="img" className="login__microcopy__heart" aria-label="Coração"> ❤️</span>
                     </strong>
                 </h2>
 

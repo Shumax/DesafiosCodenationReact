@@ -1,11 +1,14 @@
 import {createStore} from 'redux';
 import { persistStore, persistReducer} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import UserConstants from '../constants/user';
 
 import allReducers from '../reducers';
 
 const reducer = (state, action) => {
-    
+    if (action.type === UserConstants.USER_LOGOUT) {
+        state = undefined;
+    }
     return allReducers(state, action);
 }
 
