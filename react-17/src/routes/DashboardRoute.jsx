@@ -21,6 +21,8 @@ import {
   PrivateRoute,
   Topbar,
 } from '../containers';
+import PlaylistsRoute from './PlaylistsRoute';
+import TracksRoute from './TracksRoute';
 
 
 const { getCategories, getUserProfile,  } = endpoints;
@@ -71,7 +73,6 @@ const DashboardRoute = () => {
 
         dispatch(getCategoriesFailed(error))
       });
-
   }, [auth, dispatch]);
 
   return (
@@ -79,7 +80,23 @@ const DashboardRoute = () => {
       <Topbar />
 
       <Switch>
-        
+        <PrivateRoute exact path={path}>
+          <WelcomeBox name={user.name} />
+
+          <Categories
+            isLoading={content.status === 'running' && content.categories.length === 0}
+            data={content.categories}
+            url={url}
+          />
+        </PrivateRoute>
+
+        <PrivateRoute exact path={`${path}/:categoryId`}>
+          <PlaylistsRoute path={path} />
+        </PrivateRoute>
+
+        <PrivateRoute exact path={`${path}/:categoryId/:playlistId`}>
+          <TracksRoute />
+        </PrivateRoute>
       </Switch>
     </Dashboard>
   );

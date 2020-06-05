@@ -13,5 +13,21 @@ export const endpoints = {
         options: {
             method: 'GET'
         }
-    }
+    },
+    getCategories: {
+        url: `${spotify.webAPI}/browse/categories?country=BR&locale=pt_BR`,
+        options: defaultOptions
+    },
+    getUserProfile: {
+        usl: `${spotify.webAPI}/me`,
+        options: defaultOptions
+    },
+    getCategoryPlaylists: {
+        url: `${spotify.webAPI}/browse/categories/{categoryId}/playlists`,
+        options: defaultOptions,
+      },
+      getPlaylistTracks: {
+        url: `${spotify.webAPI}/playlists/{playlistId}/tracks`,
+        options: defaultOptions,
+      }
 }

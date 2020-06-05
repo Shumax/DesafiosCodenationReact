@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="11" failures="0" time="11.473">
-  <testsuite name="Spotify Pocket" errors="0" failures="0" skipped="0" timestamp="2020-06-01T23:24:14" time="8.348" tests="11">
-    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;Loading&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;Loading&gt; component" time="0.088">
+<testsuites name="jest tests" tests="11" failures="1" time="13.68">
+  <testsuite name="Spotify Pocket" errors="0" failures="1" skipped="0" timestamp="2020-06-04T23:48:25" time="10.956" tests="11">
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;Loading&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;Loading&gt; component" time="0.044">
     </testcase>
-    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;Logo&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;Logo&gt; component" time="0.026">
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;Logo&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;Logo&gt; component" time="0.016">
     </testcase>
-    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;RouteHeader&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;RouteHeader&gt; component" time="0.009">
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;RouteHeader&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;RouteHeader&gt; component" time="0.004">
     </testcase>
-    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;WelcomeBox&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;WelcomeBox&gt; component" time="0.005">
+    <testcase classname="Spotify Pocket Components data-testid match should should render properly the &lt;WelcomeBox&gt; component" name="Spotify Pocket Components data-testid match should should render properly the &lt;WelcomeBox&gt; component" time="0.004">
     </testcase>
-    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;App&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;App&gt; container" time="0.004">
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;App&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;App&gt; container" time="0.027">
     </testcase>
-    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Authorize&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Authorize&gt; container" time="0.004">
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Authorize&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Authorize&gt; container" time="0.007">
     </testcase>
-    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Categories&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Categories&gt; container" time="0.003">
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Categories&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Categories&gt; container" time="0.026">
+      <failure>Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `Categories`.
+    at createFiberFromTypeAndProps (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:23965:21)
+    at createFiberFromElement (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:23988:15)
+    at createChild (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:13628:28)
+    at reconcileChildrenArray (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:13900:25)
+    at reconcileChildFibers (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:14305:14)
+    at reconcileChildren (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:16762:28)
+    at updateHostComponent (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:17302:3)
+    at beginWork (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:18627:14)
+    at HTMLUnknownElement.callCallback (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at invokeEventListeners (/home/user/codenation/react-17/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+    at HTMLUnknownElementImpl._dispatch (/home/user/codenation/react-17/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/user/codenation/react-17/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/user/codenation/react-17/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+    at HTMLUnknownElement.dispatchEvent (/home/user/codenation/react-17/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+    at Object.invokeGuardedCallbackDev (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at beginWork$1 (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+    at performUnitOfWork (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+    at workLoopSync (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+    at performSyncWorkOnRoot (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+    at scheduleUpdateOnFiber (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+    at updateContainer (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+    at /home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:24758:7
+    at unbatchedUpdates (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+    at legacyRenderSubtreeIntoContainer (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+    at Object.render (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+    at /home/user/codenation/react-17/node_modules/@testing-library/react/dist/pure.js:86:25
+    at batchedUpdates$1 (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at act (/home/user/codenation/react-17/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at render (/home/user/codenation/react-17/node_modules/@testing-library/react/dist/pure.js:82:26)
+    at Object.&lt;anonymous&gt; (/home/user/codenation/react-17/src/__tests__/validation.spec.js:96:31)
+    at Object.asyncJestTest (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/user/codenation/react-17/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
     </testcase>
     <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;CategoryItem&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;CategoryItem&gt; container" time="0.004">
     </testcase>
-    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Login&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Login&gt; container" time="0.004">
+    <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;Login&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;Login&gt; container" time="0.007">
     </testcase>
     <testcase classname="Spotify Pocket Containers data-testid match should should render properly the &lt;PlaylistItem&gt; container" name="Spotify Pocket Containers data-testid match should should render properly the &lt;PlaylistItem&gt; container" time="0.003">
     </testcase>

@@ -18,3 +18,5 @@ const ContentConstants = {
     REMOVE_PLAYER_TRACK: 'REMOVE_PLAYER_TRACK',
     SET_PLAYER_HEIGHT: 'SET_PLAYER_HEIGHT',
   }
+
+  export default ContentConstants;
