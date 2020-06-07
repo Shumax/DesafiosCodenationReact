@@ -1,6 +1,6 @@
-export default function produtos(state = [], action) {
+export default function products(state = [], action) {
     switch (action.type) {
-      case 'ADD_PRODUTO':
+      case 'LIST_PRODUCTS':
         return [ ...state, {
           id: Math.random(),
           text: action.text,
