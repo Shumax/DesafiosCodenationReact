@@ -4,14 +4,15 @@ import Card from '../../components/Card';
 
 const Catalog = ({catalog}) => (
   <div className="container">
-    <section className="catalog">
+    <ul className="catalog">
       {catalog.map((card) => (
         <Card
-          key={post.id}
+          key={card.id}
+          card={card}
         />
       ))
       }
-    </section>
+    </ul>
   </div>
 );
 

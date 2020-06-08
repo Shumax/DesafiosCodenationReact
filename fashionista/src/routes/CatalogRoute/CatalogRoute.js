@@ -21,7 +21,7 @@ const CatalogRoute = () => {
 
   return (
     <div>
-      {catalog.length ? (<Loading/>):(
+      {!catalog.length ? (<Loading/>):(
         <Catalog
           catalog={catalog}
         />
