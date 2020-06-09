@@ -1,19 +1,19 @@
 import React from 'react';
 
+import './Catalog.scss';
 import Card from '../../components/Card';
 
 const Catalog = ({catalog}) => (
-  <div className="container">
-    <ul className="catalog">
+  <section className="catalog">
+    <div className="catalog__card">
       {catalog.map((card) => (
         <Card
           key={card.id}
           card={card}
         />
-      ))
-      }
-    </ul>
-  </div>
+      ))}
+    </div>
+  </section> 
 );
 
 export default Catalog;

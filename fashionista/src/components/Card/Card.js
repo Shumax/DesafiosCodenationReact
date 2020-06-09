@@ -1,31 +1,34 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import './Card.css';
+import './Card.scss';
 
 const Card = ({card}) => {
   return (
-    <li key={card.id} className="catalog__card">
-      <Link to={`products/${card.id}`}>
-        <figure className="catalog__poster">
-          {!card.image ? (
-            <img
-              className="catalog__img catalog__img--null"
-              src={
-                "https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"
-              }
-              alt="Null"
-            />
-          ) : (
-            <img className="catalog__img" src={card.image} alt="product" />
-          )}
-          <div className="catalog__seal">
-            {card.discount_percentage && (
-              <span>-{card.discount_percentage}</span>
-            )}
-          </div>
-        </figure>
-      </Link>
+    <div key={card.id} className="card">
+      <div className="card__main">
+        <Link to={`products/${card.id}`}>
+            <figure className="catalog__poster">
+                {!card.image ? (
+                <img
+                    className="catalog__img catalog__img--null"
+                    src={
+                    "https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"
+                    }
+                    alt="Null"
+                />
+                ) : (
+                <img className="catalog__img" src={card.image} alt="product" />
+                )}
+                <div className="catalog__seal">
+                {card.discount_percentage && (
+                    <span>-{card.discount_percentage}</span>
+                )}
+                </div>
+            </figure>
+        </Link>
+      </div>
+      <div className="card__footer">
       <div className="catalog__description">
         <strong className="catalog__name">{card.name}</strong>
         <div className="catalog__pricing">
@@ -43,7 +46,8 @@ const Card = ({card}) => {
           )}
         </div>
       </div>
-    </li>
+      </div>
+    </div>
   );
 };
 
