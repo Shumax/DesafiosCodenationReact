@@ -5,49 +5,40 @@ import './Card.scss';
 
 const Card = ({card}) => {
   return (
-    <div key={card.id} className="card">
-      <div className="card__main">
-        <Link to={`products/${card.id}`}>
-            <figure className="catalog__poster">
-                {!card.image ? (
-                <img
-                    className="catalog__img catalog__img--null"
-                    src={
-                    "https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"
-                    }
-                    alt="Null"
-                />
-                ) : (
-                <img className="catalog__img" src={card.image} alt="product" />
+      <article className="card">
+        <div className="container">
+          <Link to={`products/${card.id}`}>
+            <figure className="card__poster">
+              {!card.image ? (
+              <img className="card__pic" src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} alt="Imagem Indisponível"/>
+                ):(
+                    <img className="card__pic" src={card.image} alt="Imagem Produto"/>
                 )}
-                <div className="catalog__seal">
+              <div className="card__promo">
                 {card.discount_percentage && (
-                    <span>-{card.discount_percentage}</span>
+                  <b>- {card.discount_percentage}</b>
                 )}
-                </div>
+              </div>
             </figure>
-        </Link>
-      </div>
-      <div className="card__footer">
-      <div className="catalog__description">
-        <strong className="catalog__name">{card.name}</strong>
-        <div className="catalog__pricing">
-          {card.regular_price !== card.actual_price ? (
-            <>
-              <span className="catalog__price">{card.regular_price}</span>
-              <span className="catalog__price catalog__price--promo">
-                {card.actual_price}
-              </span>
-            </>
-          ) : (
-            <span className="catalog__price catalog__price--promo">
-              {card.regular_price}
-            </span>
-          )}
-        </div>
-      </div>
-      </div>
-    </div>
+            <div className="card__description">
+              <strong className="card__name">{card.name}</strong>
+              <div className="card__pricing">
+                {
+                  card.regular_price !== card.actual_price ? (
+                    <>
+                      <span className="card__price"> { card.regular_price } </span>
+                      <span className="card__price--promo"> { card.actual_price } </span>
+                    </>
+                  ):(
+                    <span className="card__price--promo"> {card.regular_price} </span>
+                  )
+                }
+              </div>
+            </div>
+            
+          </Link> 
+        </div> 
+      </article>
   );
 };
 

@@ -5,7 +5,7 @@ import Card from '../../components/Card';
 
 const Catalog = ({catalog}) => (
   <section className="catalog">
-    <div className="catalog__card">
+    <div className="catalog__cards">
       {catalog.map((card) => (
         <Card
           key={card.id}
