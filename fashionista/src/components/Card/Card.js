@@ -5,8 +5,7 @@ import './Card.scss';
 
 const Card = ({card}) => {
   return (
-      <article className="card">
-        <div className="container">
+      <li className="card">
           <Link to={`products/${card.id}`}>
             <figure className="card__poster">
               {!card.image ? (
@@ -35,10 +34,8 @@ const Card = ({card}) => {
                 }
               </div>
             </div>
-            
           </Link> 
-        </div> 
-      </article>
+      </li>
   );
 };
 
