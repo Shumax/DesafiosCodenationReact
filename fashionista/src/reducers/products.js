@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
   loading: true,
-  error: null,
+  error: "",
   products: []
 };
 
@@ -9,11 +9,11 @@ const products = (state = INITIAL_STATE, action) => {
       case 'LOAD_PRODUCTS':
         return [ ...state, {
           loading: true,
-          error: null,
+          error: "",
         }]
       default:
         return state;
     }
   }
 
-  export default products;
+  export {products};
