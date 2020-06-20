@@ -11,6 +11,7 @@ const CatalogRoute = () => {
 
   useEffect(() => {
     dispatch(loadProducts());
+    
     /*async function loadProducts(){
       await fetch('https://5e9935925eabe7001681c856.mockapi.io/api/v1/catalog')
         .then((response) => response.json())

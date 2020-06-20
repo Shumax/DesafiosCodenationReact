@@ -6,8 +6,9 @@ const INITIAL_STATE = {
 
 const products = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-      case 'LOAD_PRODUCTS':
-        return [ ...state, {
+      case "LOAD_PRODUCTS":
+        return [{
+          ...state,
           loading: true,
           error: "",
         }]
