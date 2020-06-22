@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import Catalog from '../../containers/Catalog';
 import Loading from '../../components/Loading';
 import { loadProducts } from '../../actions';
 
 const CatalogRoute = () => {
-  const [catalog, setCatalog] = useState([]);
+  //const [catalog, setCatalog] = useState([]);
   const dispatch = useDispatch();
+  const catalog = useSelector(state => state.products);
 
   useEffect(() => {
     dispatch(loadProducts());
@@ -21,6 +22,7 @@ const CatalogRoute = () => {
         });
     }
     loadProducts();*/
+    console.log(catalog);
   }, [dispatch]);
 
   return (
