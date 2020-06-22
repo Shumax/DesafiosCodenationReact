@@ -1,6 +1,6 @@
 import api from "../services/api";
 
-export function loadProducts() {
+export const loadProducts = () => {
     return (dispatch) => {
         dispatch({ type: "LOAD_PRODUCTS" });
         api().then(
