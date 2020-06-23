@@ -5,14 +5,15 @@ export const loadProducts = () => {
         dispatch({ type: "LOAD_PRODUCTS" });
         api().then(
             (response) => 
-              dispatch({
+            dispatch ({
                 type: "LOAD_PRODUCTS_SUCESS",
                 payload: response.data
             }),
-            (error) => 
-              dispatch({
+            (error) =>
+            dispatch({
                 type: "LOAD_PRODUCTS_ERROR",
-                error: error.messages || "Error Fetch API!"
-            }));
+                error: error.messages || "Unexpected Error!"
+            })
+        );         
     };
 };

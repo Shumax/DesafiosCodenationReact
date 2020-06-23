@@ -5,10 +5,10 @@ import Catalog from '../../containers/Catalog';
 import Loading from '../../components/Loading';
 import { loadProducts } from '../../actions';
 
-const CatalogRoute = () => {
+function CatalogRoute () {
   //const [catalog, setCatalog] = useState([]);
   const dispatch = useDispatch();
-  const catalog = useSelector(state => state.products);
+  const catalog = useSelector(state => state.products.products);
 
   useEffect(() => {
     dispatch(loadProducts());
@@ -22,14 +22,13 @@ const CatalogRoute = () => {
         });
     }
     loadProducts();*/
-    console.log(catalog);
+    //console.log(catalog);
   }, [dispatch]);
 
   return (
     <div>
-      {!catalog.length ? (<Loading/>):(
+      {!catalog ? (<Loading/>):(
         <Catalog
-          catalog={catalog}
         />
       )}
     </div>

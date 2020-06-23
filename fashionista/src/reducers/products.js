@@ -24,7 +24,7 @@ const products = (state = INITIAL_STATE, action) => {
           }),
           loading: false
         }
-      }
+      }      
       case "LOAD_PRODUCTS_ERROR": {
         return {
           ...state,

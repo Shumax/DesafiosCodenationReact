@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import CatalogRoute from './CatalogRoute';
 
+
 const Routes = () => (
   <BrowserRouter>
     <Switch>
