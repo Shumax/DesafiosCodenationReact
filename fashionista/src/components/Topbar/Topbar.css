@@ -8,6 +8,7 @@
   width: 100%;
   position: fixed;
   z-index: 10;
+  padding-top: 5px;
 }
 .Topbar__header ul {
   display: flex;
@@ -16,20 +17,22 @@
   padding: .5rem;
   padding: 0;
   position: relative;
+  align-items: center;
 }
 .Topbar__header li{
-  margin: 0 1rem;
+  margin: 0 8px;
 }
 .header__logo {
-  height: 5rem; 
+  height: 4.4rem; 
 }
 .header__logo img{
   height: 100%;
 }
 .header__search {
-  color: #212529;
-
+  font-size: 20px;
+  color: #3f454b;
 }
 .header__shopping{
+  font-size: 20px;
   color: #3f454b;
 }
