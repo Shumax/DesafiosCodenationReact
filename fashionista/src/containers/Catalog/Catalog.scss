@@ -7,7 +7,6 @@
     flex-wrap: wrap;
     flex-direction: row;;
     list-style: none;
-    margin-right: 5%;
   }
 
   &__container {
@@ -16,9 +15,16 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding-left: 2%;
-    //padding-right: 2%;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
     //position: relative;
+  }
+
+  &__counter {
+    position: relative;
+    margin-right: auto;
+    margin-left: .6rem;
+    color: #171313;
   }
   
   @media screen and (min-width: 1279px) {

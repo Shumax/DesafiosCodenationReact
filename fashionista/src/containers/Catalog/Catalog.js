@@ -10,6 +10,9 @@ function Catalog () {
   return (
     <section className="catalog">
       <div className="catalog__container">
+        <div className="catalog__counter">
+          <b>{catalog.length} Itens</b>
+        </div>
         <ul className="catalog__cards">
           {catalog?.map((card) => (
             <Card

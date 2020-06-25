@@ -27,7 +27,7 @@ function CatalogRoute () {
 
   return (
     <div>
-      {!catalog ? (<Loading/>):(
+      {!catalog.length ? (<Loading/>):(
         <Catalog
         />
       )}
