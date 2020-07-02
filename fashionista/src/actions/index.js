@@ -3,7 +3,7 @@ import api from "../services/api";
 export const loadProducts = () => {
     return (dispatch) => {
         dispatch({ type: "LOAD_PRODUCTS" });
-        api().then(
+         api().then(
             (response) => 
             dispatch ({
                 type: "LOAD_PRODUCTS_SUCESS",

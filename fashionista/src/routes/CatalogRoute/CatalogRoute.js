@@ -14,15 +14,15 @@ function CatalogRoute () {
     dispatch(loadProducts());
     
     /*async function loadProducts(){
-      await fetch('https://5e9935925eabe7001681c856.mockapi.io/api/v1/catalog')
+      await fetch("../../../public/services/data.json")
         .then((response) => response.json())
         .then(data => setCatalog(data))
         .catch(erro => {
           throw erro;
         });
     }
-    loadProducts();*/
-    //console.log(catalog);
+    loadProducts();
+    console.log(catalog);*/
   }, [dispatch]);
 
   return (

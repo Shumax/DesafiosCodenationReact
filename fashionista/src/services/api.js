@@ -1,10 +1,11 @@
 import axios from "axios";
 
-const baseURL = "https://5e9935925eabe7001681c856.mockapi.io/api/v1/catalog";
+const baseURL = "http://localhost:3000/products";
 
 export default async function fetchAPI(){
   return await axios.get(baseURL);
 }
+
 /*
 export default async function fetchAPI(){
     await fetch('https://5e9935925eabe7001681c856.mockapi.io/api/v1/catalog')
