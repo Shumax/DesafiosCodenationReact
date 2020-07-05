@@ -4,21 +4,25 @@ import { useParams } from "react-router-dom";
 
 
 
-function SingleProduct () {
+function SingleProduct (productId) {
     const products = useSelector(state => state.products.products);
-    const productId = useParams();
+    //const productId = useParams();
 
-    const filterProducts = products.map((item) => {
-        if (item.id === productId.id) {
-            return {
-                id: item.id
-            };
+    var parse = productId.productId;
+
+    const filterProducts = products.filter(function(item) {
+        if (item.id == parse) {
+            return (
+                item
+            );
         }
     });
+   
 
-    console.log(filterProducts);
+    console.log(parse);
+    console.log(filterProducts)
     return (
-        <div></div>
+    <div>{filterProducts}</div>
     );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from "react-redux";
 
 import './Catalog.scss';
-import Card from '../../components/Card';
+import Card from '../../components/Cards';
 
 function Catalog () {
   const catalog = useSelector(state => state.products.products);

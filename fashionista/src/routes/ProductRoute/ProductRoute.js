@@ -5,8 +5,8 @@ import SingleProduct from '../../containers/SingleProduct';
 
 function ProductRoute () {
   const {id} = useParams();
-  const products = useSelector(state => state.products.products);
-  console.log(products);
+  //const products = useSelector(state => state.products.products);
+  console.log(id);
 
   return (
     <SingleProduct productId={id}/>
