@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from "react-redux";
+import SingleCard from '../../components/SingleCard';
 
 
 function SingleProduct (productId) {
@@ -15,14 +16,14 @@ function SingleProduct (productId) {
             };
         }
     });*/
-    const filterProducts = products.filter(item => item.id == productId.productId)
+    const filteredProducts = products.filter(item => item.id == productId.productId)
         .map((item) => item);
    
 
     console.log(parse);
-    console.log(filterProducts)
+    console.log(filteredProducts)
     return (
-    <div></div>
+        <SingleCard filteredCard={filteredProducts} />
     );
 };
 
