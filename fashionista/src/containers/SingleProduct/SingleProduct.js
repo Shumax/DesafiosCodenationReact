@@ -1,7 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-
 
 
 function SingleProduct (productId) {
@@ -10,19 +8,21 @@ function SingleProduct (productId) {
 
     var parse = productId.productId;
 
-    const filterProducts = products.filter(function(item) {
+    /*const filterProducts = products.filter(function(item) {
         if (item.id == parse) {
-            return (
+            return {
                 item
-            );
+            };
         }
-    });
+    });*/
+    const filterProducts = products.filter(item => item.id == productId.productId)
+        .map((item) => item);
    
 
     console.log(parse);
     console.log(filterProducts)
     return (
-    <div>{filterProducts}</div>
+    <div></div>
     );
 };
 

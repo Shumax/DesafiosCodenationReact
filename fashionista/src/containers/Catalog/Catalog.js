@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from "react-redux";
 
 import './Catalog.scss';
-import Card from '../../components/Cards';
+import Cards from '../../components/Cards';
 
 function Catalog () {
   const catalog = useSelector(state => state.products.products);
@@ -15,9 +15,9 @@ function Catalog () {
         </div>
         <ul className="catalog__cards">
           {catalog?.map((card) => (
-            <Card
+            <Cards
               key={card.id}
-              card={card}
+              cards={card}
             />
           ))}
         </ul>
