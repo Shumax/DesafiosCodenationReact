@@ -7,23 +7,31 @@ function SingleProduct (productId) {
     const products = useSelector(state => state.products.products);
     //const productId = useParams();
 
+    /*
     var parse = productId.productId;
 
-    /*const filterProducts = products.filter(function(item) {
+    const filterProducts = products.filter(function(item) {
         if (item.id == parse) {
             return {
                 item
             };
         }
-    });*/
+    });
     const filteredProducts = products.filter(item => item.id == productId.productId)
         .map((item) => item);
    
 
     console.log(parse);
-    console.log(filteredProducts)
+    console.log(filteredProducts)*/
     return (
-        <SingleCard filteredCard={filteredProducts} />
+        <div>
+            {products.filter(item => item.id == productId.productId)
+                .map((item, index) =>
+                    <SingleCard key={index} filteredCard={item}/>
+                )
+            }
+        </div>
+        
     );
 };
 
