@@ -31,8 +31,10 @@
 .header__search {
   font-size: 20px;
   color: #3f454b;
+  cursor: pointer;
 }
 .header__shopping{
   font-size: 20px;
   color: #3f454b;
+  cursor: pointer;
 }

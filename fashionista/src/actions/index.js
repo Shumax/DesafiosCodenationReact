@@ -17,3 +17,8 @@ export const loadProducts = () => {
         );         
     };
 };
+export const handleSearch = () => {
+    return (dispatch) => {
+        dispatch({ type: "SHOW_SEARCH" });
+    };
+};
