@@ -22,3 +22,8 @@ export const handleSearch = () => {
         dispatch({ type: "SHOW_SEARCH" });
     };
 };
+export const handleBag = () => {
+    return (dispatch) => {
+        dispatch({ type: "SHOW_BAG" });
+    };
+};
