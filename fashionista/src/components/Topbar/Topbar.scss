@@ -32,7 +32,13 @@
   font-size: 20px;
   color: #3f454b;
   cursor: pointer;
+
+  &:after {
+    display: none;
+    color:#fff;
+  }
 }
+
 .header__shopping{
   font-size: 20px;
   color: #3f454b;

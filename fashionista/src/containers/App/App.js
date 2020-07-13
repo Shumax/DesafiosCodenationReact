@@ -4,7 +4,7 @@ import store from '../../store';
 import Routes from '../../routes';
 import Topbar from "../../components/Topbar";
 
-import './App.css';
+import './App.scss';
 
 export default function App() {
   return (

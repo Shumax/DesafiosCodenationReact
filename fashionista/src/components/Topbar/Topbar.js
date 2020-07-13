@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SearchButton from "../SearchButton";
 import BagButton from "../BagButton";
 import { faSearch, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
-import './Topbar.css';
+import './Topbar.scss';
 
 const Topbar = () => {
   const dispatch = useDispatch();
