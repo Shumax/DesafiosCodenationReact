@@ -27,3 +27,8 @@ export const handleBag = () => {
         dispatch({ type: "SHOW_BAG" });
     };
 };
+export const handleCancealment = () => { 
+    return (dispatch) => { 
+        dispatch({ type: "HIDE_BUTTON" });
+     };
+ };

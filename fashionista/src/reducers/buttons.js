@@ -12,12 +12,6 @@ const buttons = (state = INITIAL_STATE, action) => {
                 bagButton: false,
             }
         }
-        case "HIDE_SEARCH": {
-            return {
-                ...state,
-                searchButton: false,
-            }
-        }
         case "SHOW_BAG": {
             return {
                 ...state,
@@ -25,9 +19,10 @@ const buttons = (state = INITIAL_STATE, action) => {
                 searchButton: false,
             }
         }
-        case "HIDE_BAG": {
+        case "HIDE_BUTTON": {
             return {
                 ...state,
+                searchButton: false,
                 bagButton: false,
             }
         }
