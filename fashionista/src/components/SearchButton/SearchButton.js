@@ -11,13 +11,21 @@ const SearchButton = () => {
   return (
       <div className="visible">
         <div className="search">
-            <FontAwesomeIcon className="search__back--button" icon={faArrowLeft}
-              onClick={()=> dispatch(handleCancealment())}
-            />
-            <strong className="header__title"> Buscar Produtos</strong>
+          <div className="search__title"> 
+            <ul>
+              <li>
+                <FontAwesomeIcon className="search__back--button" icon={faArrowLeft}
+                onClick={() => dispatch(handleCancealment())}
+                />
+              </li>
+              <li>
+                <strong className="search__title--text">Buscar Produtos</strong>
+              </li>
+            </ul>
+          </div>
           
           <div className="search__form">
-              <input className="search__input" type="text" placeholder="Pesquise pelo produto" />
+            <input className="search__input" type="text" placeholder="Pesquise pelo produto" />
         </div>    
       </div>
 
