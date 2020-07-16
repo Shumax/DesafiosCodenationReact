@@ -17,34 +17,11 @@
     z-index: 15;
   }
 }*/
-.visible {
-  overflow-y: hidden;
-  transition: opacity 225ms;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
 
-  &:before {
-    backface-visibility: visible;
-    background: radial-gradient(ellipse at center,#7a7a7a 0,#000 100%);
-    bottom: 0;
-    content: "";
-    height: 100%;
-    opacity: .75;
-    position: fixed;
-    left: 0;
-    visibility: visible;
-    width: 100%;
-    z-index: 15;
-  }
-
-  @media screen and (min-height: 100vh) {
-    right: 0;
-    width: 375px;
-  }
-}
 
 .search {
   background: white;
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
