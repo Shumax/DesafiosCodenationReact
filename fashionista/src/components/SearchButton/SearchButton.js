@@ -8,6 +8,7 @@ import './Search.scss';
 
 const SearchButton = () => {
   const dispatch = useDispatch();
+  var nameValue = "";
   return (
       <div className="visible">
         <div className="search">
@@ -25,17 +26,18 @@ const SearchButton = () => {
           </div>
           
           <div className="search__form">
-            <input className="search__input" type="text" placeholder="Pesquise pelo produto" />
-        </div>    
-      </div>
+            <input 
+              className="search__input" 
+              type="text" 
+              placeholder="Pesquise pelo produto" 
+              value={nameValue}
+              
+            />
+          </div> 
 
-      </div>
-      
-      
-      
-
-  
-      
+          
+        </div>
+      </div>      
   );
 };
 
