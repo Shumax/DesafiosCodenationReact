@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { handleCancealment } from '../../actions';
  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,28 +9,26 @@ import './Bag.scss';
 
 const BagButton = () => {
     const dispatch = useDispatch();
+    //const bagList = useSelector();  
     return (
-        <div className="visible">
-            <div className="bag">
-                <div className="bag__title">
-                    <ul>
-                        <li>
-                            <FontAwesomeIcon
-                            className="bag__back--button"
-                            icon={faArrowLeft}
-                            onClick={() => { dispatch(handleCancealment()) }}
-                            />
-                        </li>
-                        <li>
-                            <strong className="bag__title--text">Sacola</strong>
-                        </li>
-                    </ul>
-                </div>
-                
-                
-            </div>
-
-        </div>
+			<div className="visible">
+				<div className="bag">
+					<div className="bag__title">
+						<ul>
+							<li>
+								<FontAwesomeIcon
+								className="bag__back--button"
+								icon={faArrowLeft}
+								onClick={() => { dispatch(handleCancealment()) }}
+								/>
+							</li>
+							<li>
+								<strong className="bag__title--text">Sacola</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
     );
 };
 

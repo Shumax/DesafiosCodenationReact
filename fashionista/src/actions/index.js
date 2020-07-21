@@ -32,3 +32,20 @@ export const handleCancealment = () => {
         dispatch({ type: "HIDE_BUTTON" });
      };
  };
+ export const listProducts = (event, products) => {
+	 const searchName = event.target.value;
+	 console.log(products);
+	 return (dispatch) => {
+		 if (searchName.length) {
+			 dispatch({ 
+				 type: "SEARCH_PRODUCT", 
+				 payload: {
+					 searchName: searchName,
+					 searchedProducts: products.filter(
+					findProduct =>  findProduct.name.toLowerCase()
+					.includes(searchName.toLowerCase()))
+				 }
+			});
+		 }
+	 };
+ };

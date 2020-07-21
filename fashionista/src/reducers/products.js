@@ -1,7 +1,9 @@
 const INITIAL_STATE = {
   loading: true,
   error: "",
-  products: [],
+	products: [],
+	searchName: "",
+	searchedProducts: [],
 };
 
 const products = (state = INITIAL_STATE, action) => {
@@ -31,7 +33,14 @@ const products = (state = INITIAL_STATE, action) => {
           loading: false,
           error: action.error
         }
-      }
+			}
+			case "SEARCH_PRODUCT": {
+				return {
+					...state,
+					searchName: action.payload.searchName,
+					searchedProducts: action.payload.searchedProducts,
+				}
+			}
       default:
         return state;
     }
