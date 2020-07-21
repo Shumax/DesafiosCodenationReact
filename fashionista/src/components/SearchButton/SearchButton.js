@@ -37,6 +37,14 @@ const SearchButton = () => {
               onChange={(event) => dispatch(listProducts(event, products))}
             />
           </div> 
+					<div className="search__content">
+						{!searchedProducts.length ? (
+							<p>Nenhum produto encontrado!</p>
+						):(
+							<div></div>
+						)}
+					</div>
+					
 
           
         </div>

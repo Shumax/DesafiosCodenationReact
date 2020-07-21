@@ -1,12 +1,12 @@
 import React from 'react';
 import './SingleCard.scss';
 
-const SingleCard = ({filteredCard}) => {
+const SingleCard = ({index, filteredCard}) => {
 
     console.log(filteredCard)
     return (
-        <div className="singleCard">
-            <figure className="singleCard__poster">
+        <div key={index} className="singleCard">
+            <figure key ={filteredCard.id} className="singleCard__poster">
                 {!filteredCard.image ? (
                     <img className="singleCard__pic" src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} alt="Imagem Indisponível"/>
                 ):(
@@ -20,7 +20,7 @@ const SingleCard = ({filteredCard}) => {
             </figure>
             <section className="singleCard__content">
                 <h3 className="singleCard__name">{filteredCard.name}</h3>
-                <div className="singleCard__pricing">
+                <div key={filteredCard.id} className="singleCard__pricing">
                     {filteredCard.regular_price !== filteredCard.actual_price ? (
                       <>
                         <span className="singleCard__price">{filteredCard.regular_price}</span>

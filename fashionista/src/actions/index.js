@@ -33,17 +33,18 @@ export const handleCancealment = () => {
      };
  };
  export const listProducts = (event, products) => {
-	 const searchName = event.target.value;
+	 const searchName = event.target.value || "";
 	 console.log(products);
+
 	 return (dispatch) => {
-		 if (searchName.length) {
+		 if (!searchName.length < 2) {
 			 dispatch({ 
 				 type: "SEARCH_PRODUCT", 
 				 payload: {
 					 searchName: searchName,
 					 searchedProducts: products.filter(
-					findProduct =>  findProduct.name.toLowerCase()
-					.includes(searchName.toLowerCase()))
+						findProduct =>  findProduct.name.toLowerCase()
+						.includes(searchName.toLowerCase()))
 				 }
 			});
 		 }
