@@ -35,9 +35,9 @@ export const handleCancealment = () => {
  export const listProducts = (event, products) => {
 	 const searchName = event.target.value || "";
 	 console.log(products);
-
+	 
 	 return (dispatch) => {
-		 if (!searchName.length < 2) {
+		 if (!searchName.length < 3) {
 			 dispatch({ 
 				 type: "SEARCH_PRODUCT", 
 				 payload: {
