@@ -26,8 +26,8 @@ function SingleProduct (productId) {
     return (
         <div>
             {products.filter(item => item.id == productId.productId)
-                .map((item, index) =>
-                    <SingleCard key={index} filteredCard={item}/>
+                .map((card) =>
+                    <SingleCard key={card.id} filteredCard={card}/>
                 )
             }
         </div>

@@ -47,6 +47,14 @@ export const handleCancealment = () => {
 						.includes(searchName.toLowerCase()))
 				 }
 			});
+		 }else if (searchName === " ") {
+			 dispatch({
+				type: "SEARCH_PRODUCT",
+				payload: {
+					searchName: "",
+					searchedProducts: []
+				}
+			 });
 		 }
 	 };
  };
