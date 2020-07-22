@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { handleCancealment, listProducts } from '../../actions';
-import { Link } from 'react-router-dom';
+import SearchedCards from '../../components/SearchedCards';
  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -42,42 +42,9 @@ const SearchButton = () => {
 						{!searchedProducts.length ? (
 							<p>Nenhum produto encontrado!</p>
 						):(
-							searchedProducts?.map((card)=>(
-								<ul>
-									<li>
-									<figure className="card__poster">
-										{!card.image ? (
-										<img className="card__pic" src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} alt="Imagem Indisponível"/>
-											):(
-													<img className="card__pic" src={card.image} alt="Imagem Produto"/>
-											)}
-										<div className="card__promo">
-											{card.discount_percentage && (
-												<b>- {card.discount_percentage}</b>
-											)}
-										</div>
-									</figure>
-									<div className="card__description">
-										<strong className="card__name">{card.name}</strong>
-										<div className="card__pricing">
-											{
-												card.regular_price !== card.actual_price ? (
-													<>
-														<span className="card__price"> { card.regular_price } </span>
-														<span className="card__price--promo"> { card.actual_price } </span>
-													</>
-												):(
-													<span className="card__price--promo"> {card.regular_price} </span>
-												)
-											}
-										</div>
-									</div>
-
-									</li>
-									
-								</ul>
+							searchedProducts?.map((cards)=>(
+								<SearchedCards key={cards.id} card={cards} />
 							))
-							
 						)}
 					</div>
 					
