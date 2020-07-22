@@ -1,33 +1,30 @@
 import React from 'react';
+import './SearchedCards.scss';
 
 const SearchedCards = ({card}) => {
 	return (
-		<div>
-			<figure className="card__poster">
+		<div className="searched__card">
+			<figure className="searched__card--poster">
 				{!card.image ? (
-				<img className="card__pic" src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} alt="Imagem Indisponível"/>
-					):(
-							<img className="card__pic" src={card.image} alt="Imagem Produto"/>
+					<img 
+						className="searched__card--pic" 
+						src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} 
+						alt="Imagem Indisponível"
+					/> ):(
+						<img className="searched__card--pic" src={card.image} alt="Imagem Produto"/>
 					)}
-				<div className="card__promo">
-					{card.discount_percentage && (
-						<b>- {card.discount_percentage}</b>
-					)}
-				</div>
 			</figure>
-			<div className="card__description">
-				<strong className="card__name">{card.name}</strong>
-				<div className="card__pricing">
-					{
-						card.regular_price !== card.actual_price ? (
-							<>
-								<span className="card__price"> { card.regular_price } </span>
-								<span className="card__price--promo"> { card.actual_price } </span>
-							</>
-						):(
-							<span className="card__price--promo"> {card.regular_price} </span>
-						)
-					}
+			<div className="searched__card--description">
+				<strong className="searched__card--name">{card.name}</strong>
+				<div className="searched__card--pricing">
+					{card.regular_price !== card.actual_price ? (
+						<>
+							<span className="searched__card--price"> { card.regular_price } </span>
+							<span className="searched__card__price--promo"> { card.actual_price } </span>
+						</>
+					):(
+						<span className="searched__card__price--promo"> {card.regular_price} </span>
+					)}
 				</div>
 			</div>
 		</div>
