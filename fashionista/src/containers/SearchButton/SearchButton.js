@@ -6,6 +6,7 @@ import SearchedCards from '../../components/SearchedCards';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import './Search.scss';
+import { Link } from "react-router-dom";
 
 const SearchButton = () => {
   const dispatch = useDispatch();
@@ -43,8 +44,11 @@ const SearchButton = () => {
 							<p>Nenhum produto encontrado!</p>
 						):(
 							searchedProducts?.map((cards)=>(
+								<Link to={`products/${cards.id}`}>
 								<SearchedCards key={cards.id} card={cards} />
+								</Link>
 							))
+							
 						)}
 					</div>
 					

@@ -37,7 +37,7 @@ export const handleCancealment = () => {
 	 console.log(products);
 	 
 	 return (dispatch) => {
-		 if (!searchName.length < 3) {
+		 if (searchName != "") {
 			 dispatch({ 
 				 type: "SEARCH_PRODUCT", 
 				 payload: {
@@ -47,7 +47,7 @@ export const handleCancealment = () => {
 						.includes(searchName.toLowerCase()))
 				 }
 			});
-		 }else if (searchName === " ") {
+		 }else {
 			 dispatch({
 				type: "SEARCH_PRODUCT",
 				payload: {

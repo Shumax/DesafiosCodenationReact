@@ -10,10 +10,12 @@ const SearchedCards = ({card}) => {
 						className="searched__card--pic" 
 						src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} 
 						alt="Imagem Indisponível"
-					/> ):(
+					/>
+					):(
 						<img className="searched__card--pic" src={card.image} alt="Imagem Produto"/>
 					)}
 			</figure>
+			
 			<div className="searched__card--description">
 				<strong className="searched__card--name">{card.name}</strong>
 				<div className="searched__card--pricing">
@@ -27,6 +29,7 @@ const SearchedCards = ({card}) => {
 					)}
 				</div>
 			</div>
+			
 		</div>
 	);
 }

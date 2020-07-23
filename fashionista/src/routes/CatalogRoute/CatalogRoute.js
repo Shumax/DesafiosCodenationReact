@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 
+import TopBar from '../../containers/Topbar';
 import Catalog from '../../containers/Catalog';
 import Loading from '../../components/Loading';
 import { loadProducts } from '../../actions';
@@ -27,6 +28,7 @@ function CatalogRoute () {
 
   return (
     <div>
+			<TopBar/>
       {!catalog.length ? (<Loading/>):(
         <Catalog
         />
