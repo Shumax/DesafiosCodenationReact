@@ -18,16 +18,10 @@ const SearchButton = () => {
       <div className="visible">
         <div className="search">
           <div className="search__title"> 
-            <ul>
-              <li>
-                <FontAwesomeIcon className="search__back--button" icon={faArrowLeft}
+            <FontAwesomeIcon className="search__back--button" icon={faArrowLeft}
                 onClick={() => dispatch(handleCancealment())}
-                />
-              </li>
-              <li>
-                <strong className="search__title--text">Buscar Produtos</strong>
-              </li>
-            </ul>
+            />
+						<strong className="search__title--text">Buscar Produtos</strong>
           </div>
           
           <div className="search__form">
@@ -41,7 +35,7 @@ const SearchButton = () => {
           </div> 
 					<div className="search__content">
 						{!searchedProducts.length ? (
-							<p>Nenhum produto encontrado!</p>
+							<strong>Nenhum produto encontrado!</strong>
 						):(
 							searchedProducts?.map((cards)=>(
 								<Link to={`products/${cards.id}`}>
