@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchedCards.scss';
+import ImageUnavailable from "../../assets/img/ImagemIndisponivel.png";
 
 const SearchedCards = ({card}) => {
 	return (
@@ -8,7 +9,7 @@ const SearchedCards = ({card}) => {
 				{!card.image ? (
 					<img 
 						className="searched__card--pic" 
-						src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} 
+						src={ImageUnavailable} 
 						alt="Imagem Indisponível"
 					/>
 					):(

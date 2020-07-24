@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+import ImageUnavailable from "../../assets/img/ImagemIndisponivel.png";
 import './Cards.scss';
 
 const Cards = ({cards}) => {
@@ -9,7 +10,7 @@ const Cards = ({cards}) => {
           <Link to={`products/${cards.id}`}>
             <figure className="cards__poster">
               {!cards.image ? (
-              <img className="cards__pic" src={"https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível"} alt="Imagem Indisponível"/>
+              <img className="cards__pic" src={ImageUnavailable} alt="Imagem Indisponível"/>
                 ):(
                     <img className="cards__pic" src={cards.image} alt="Imagem Produto"/>
                 )}
