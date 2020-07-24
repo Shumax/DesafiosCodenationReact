@@ -27,12 +27,13 @@ const SingleCard = ({filteredCard}) => {
 									<span className="singleCard__price--promo">{filteredCard.actual_price}</span>
 								</>
 							) : (
-									<span className="singleCard__price">{filteredCard.regular_price}</span>    
+									<span className="singleCard__price--single">{filteredCard.regular_price}</span>    
 							)}
-							<span className="singleCard__price--installments">{` Em até ${filteredCard.installments}`}</span>
+							<span className="singleCard__price--installments">{`em até ${filteredCard.installments}`}</span>
 					</div>
-					<p>Escolha o tamanho!</p>
+					
 					<div className="singleCard__sizes">
+					<p>Escolha o tamanho!</p>
 							{filteredCard.sizes.filter(sizes => sizes.available === true)
 									.map((size) => {
 											return (
