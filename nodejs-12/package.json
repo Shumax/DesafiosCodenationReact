@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
     "jest": "^25.5.4",
     "jest-junit": "^10.0.0"
-  }
+  },
+  "dependencies": {}
 }
