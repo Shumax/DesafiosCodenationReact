@@ -16,5 +16,7 @@
     "jest": "^25.5.4",
     "jest-junit": "^10.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

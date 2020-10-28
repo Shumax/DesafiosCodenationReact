@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const { products } = require('../src/data/products');
-const { getShoppingCart } = require('../src');
+const { getShoppingCart } = require('../src/controllers/cart');
 
 const exemplo1Mock = {
   products: [
