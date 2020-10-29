@@ -2,11 +2,14 @@
   "name": "react-14",
   "version": "1.0.0",
   "description": "Api teste e-commerce",
-	"main": "src/server.js",
-	"author": "Shumax maxcastro.mv@gmail.com",
+  "main": "src/server.js",
+  "author": "Shumax maxcastro.mv@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
   },
   "devDependencies": {
     "eslint": "^7.12.0",
@@ -14,9 +17,9 @@
     "eslint-plugin-import": "^2.22.1",
     "jest": "^25.5.4",
     "jest-junit": "^10.0.0"
-	},
-	"scripts": {
-    "start": "node src/server.js",
+  },
+  "scripts": {
+    "start": "nodemon src/server.js",
     "test": "jest test/index.test.js",
     "test:watch": "jest test/index.test.js --watch"
   }
