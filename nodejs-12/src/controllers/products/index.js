@@ -1,6 +1,6 @@
-import data from '../../data/products.json';
+const data = require('../../data/products.json');
 
-export default {
+module.exports = {
   index(request, response) {
     const products = data;
 

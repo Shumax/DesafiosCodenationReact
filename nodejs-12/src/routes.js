@@ -1,9 +1,9 @@
-import { Router } from 'express';
+const { Router } = require('express');
 
-import Products from './controllers/products';
+const Products = require('./controllers/products');
 
 const routes = Router();
 
 routes.get('/catalog', Products.index);
 
-export default routes;
+module.exports = routes;
